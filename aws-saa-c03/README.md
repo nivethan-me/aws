@@ -67,3 +67,45 @@
 
 1. Click on `Create Budget`
 
+---
+
+### IAM
+
+1. IAM allows to create 3 different objects
+  1. User
+  1. Group
+  1. Roles
+
+1. IAM has no cost (but has limitations)
+
+1. IAM is a `Global service` / `Global resilience`
+
+1. Allows or Deny its identities on its AWS accounts
+
+1. No direct control on external users
+
+1. Identity federation and MFA
+
+
+### Add IAMADMIN to root account
+
+1. Search for `IAM` in AWS console
+
+1. On the sidebar click on `Users` under `Access Management`
+
+1. Click on `Create user`
+
+1. Provide a username
+
+1. Check the `Provide user access to the AWS Management Console - optional` option
+
+1. Add a custom password and click `Next`
+
+1. Under `Set permissions` check the `Attach policies directly` option
+    - Under `Permissions policies` check `AdministratorAccess` policy and click `Next`
+
+1. Open the console url and type username and password 
+
+1. Set up MFA like we did for root user [here](#creating-generalmanagement-account)
+
+
