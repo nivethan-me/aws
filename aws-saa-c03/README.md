@@ -1,58 +1,69 @@
-# AWS Certified Solutions Architect – Associate (SAA-C03)
+<h1 align="center"> AWS Certified Solutions Architect – Associate (SAA-C03) </h1>
 
-## Course Fundamentals and AWS Accounts
+---
+
+## 1. Course Fundamentals and AWS Accounts
 
 ### Creating general(management) account
 
-- we can use email alias to create multiple accounts in aws
+1. we can use email alias to create multiple accounts in aws
   eg: user.aws+management@proton.me
 
-- Signup for a root account
+1. Signup for a root account
 
-- Signin using the account email & password
+1. Signin using the account email & password
 
-- Enter alternate contacts
+1. Activate IAM Access
+    - Go to `Account`
 
-- Under `IAM User and Role Access to Billing Information` section check the `Activate IAM Access` option
+      <img title="" src="assets/activate-iam-access.png" alt="MFA" width="195">
 
-- Use the Region as N.Virginia
+    - Enter alternate contacts (optional)
 
-- Activate MFA
+    - Under `IAM User and Role Access to Billing Information` section check the `Activate IAM Access` option
 
-  <img title="" src="assets/turn-on-mfa.png" alt="MFA" width="195">
+1. Use the Region as `N.Virginia`
+
+1. Activate MFA
+
+    <img title="" src="assets/turn-on-mfa.png" alt="MFA" width="195">
 
 ---
 
 ### Creating Alerts to email
 
-- Go to `Billing and Cost Management`
+1. Go to `Billing and Cost Management`
 
-  <img title="" src="assets/create-budget.png" alt="MFA" width="195">
+    <img title="" src="assets/create-budget.png" alt="MFA" width="195">
 
-- Enable PDF invoices to email
+1. Enable PDF invoices to email
 
-  - Click on `Billing Preferences`
-  - Click edit button on `Invoice delivery preferences` box
-  - Check the `PDF invoices delivered by email` checkbox and click Update button
+    - Click on `Billing Preferences`
+    - Click edit button on `Invoice delivery preferences` box
+    - Check the `PDF invoices delivered by email` checkbox and click Update button
 
-- Enable Free tier alerts
-  - Click edit button on `Alert preferences` box
-  - Select both `Receive AWS Free Tier alerts` and `Receive CloudWatch billing alerts` checkboxes
+1. Enable Free tier alerts
 
-<img title="after activate both options you'll see following output" src="assets/after-activate-email-alerts.png" alt="MFA" width="80%" align="center"/>
+    - Click edit button on `Alert preferences` box
+    - Select both `Receive AWS Free Tier alerts` and `Receive CloudWatch billing alerts` checkboxes
 
-<sup><sub> after activate both options you'll see above output </sub></sup>
+  <img title="after activate both options you'll see following output" src="assets/after-activate-email-alerts.png" alt="MFA" width="80%" align="center"/>
+
+  <sup><sub> after activate both options you'll see above output </sub></sup>
 
 ---
 
 ### Creating Budget
 
-- Go to `Billing and Cost Management`
+1. Go to `Billing and Cost Management`
 
-  <img title="" src="assets/create-budget.png" alt="MFA" width="195">
+    <img title="" src="assets/create-budget.png" alt="MFA" width="195">
 
-- Click on `Create a Budget` button
-  - Budget Setup - `Use a Template`
-  - Templates - `Zero spend budget`
-- Give a name and Email recipients to the Budget
-- Click on `Create Budget`
+1. Click on `Create a Budget` button
+    - Budget Setup - `Use a Template`
+    - Templates - `Zero spend budget`
+
+1. Give a name and Email recipients to the Budget
+
+1. Click on `Create Budget`
+
