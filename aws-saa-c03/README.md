@@ -108,4 +108,19 @@
 
 1. Set up MFA like we did for root user [here](#creating-generalmanagement-account)
 
+--- 
 
+### Creating Access keys and setting up AWS CLI v2
+
+1. Click on `Security credentials`
+
+    <img title="" src="assets/turn-on-mfa.png" alt="MFA" width="195">
+
+1. Scroll and click on `Create access key` 
+    - Select `Command Line Interface (CLI)` option and click `Next`
+    - Download .csv file
+
+1. Install AWS CLI v2 as per [instructions](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+1. Run `aws configure --profile iamadmin-management`
+    - Try running `aws s3 ls --profile iamadmin-management` to make sure you're not getting any errors
