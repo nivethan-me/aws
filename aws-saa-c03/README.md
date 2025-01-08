@@ -124,3 +124,96 @@
 
 1. Run `aws configure --profile iamadmin-management`
     - Try running `aws s3 ls --profile iamadmin-management` to make sure you're not getting any errors
+
+---
+
+## 2. AWS Fundamentals
+
+### AWS Public vs Private Services
+
+---
+
+### AWS Global Infrastructure
+
+---
+
+### EC2 (Elastic compute cloud) 
+
+1. Search for `ec2` on aws console.
+
+1. Create a key pair
+    - select `Key pairs` on left sidebar menu
+    - key pair type - `RSA`
+    - Private key file format - `.pem` (for linux, macos and modern windows)
+
+1. Launch an instance 
+    - select `instances` on left sidebar
+    - select `Launch instances`
+
+---
+
+### S3 Basics
+
+1. Global storage platform - regional based/resilient
+
+1. public service, unlimited data & multi-user
+
+1. Can store Movies, Photos, Audio , Large data sets etc
+
+1. Objects & Buckets
+    - object consist of key and value
+    - size range from 0 bytes - 5 TB
+    - Bucket data saved to a specific region and it never leaves that region unless we configure it
+    - Bucket name should be globally unique
+    - A bucket can hold zero to unlimited number of objects
+    - S3 bucket has no complex structure, all objects stored in the same level (no nested objects)
+    - folder names are just prefixes
+    - Buckets creation has 100 soft limit and 1000 hard limit per account
+
+1. Deleting a Bucket
+    - two step process
+      1. Empty the bucket
+      2. Delete the bucket
+
+---
+
+### CloudFormation (CFN) Basics
+
+1. Can create stacks
+
+---
+
+### CloudWatch (CW) Basics
+
+1. collects and manages operational data
+
+1. can be think as 3 producss
+  1. Metrics - disk usage, cpu utilization
+  1. Cloudwatch logs - webserver logs, firewall logs
+  1. Cloudwatch events
+
+---
+
+### Shared Responsibility Model
+
+
+---
+
+### High-Availability vs Fault-Tolerance vs Disaster Recovery
+
+1. High-Availability(HA) - remain operational, with minimal downtime in the event of disruption (minimize any outages)
+
+1. Fault-Tolerance(FT) - remain operational with zero downtime in the event of disruption (Operate through Faults)
+    - Complex system to design
+    - often very expensive
+
+1. Disaster Recover (DR) - restoring operations after a disruption (used when HA or FT don't work)
+
+---
+
+### Route53
+
+1. Register domains
+
+1. Its a global service
+
